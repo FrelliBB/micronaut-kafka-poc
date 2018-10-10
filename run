@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+./gradlew clean build
+docker build -t micronaut-kafka-poc . && docker run -d -p 8080:8080 -t micronaut-kafka-poc

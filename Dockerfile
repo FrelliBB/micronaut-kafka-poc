@@ -1,0 +1,7 @@
+FROM openjdk:8u171-alpine3.7
+
+EXPOSE 8080
+
+RUN apk --no-cache add curl
+COPY build/libs/*-all.jar micronaut-kafka-poc.jar
+CMD java ${JAVA_OPTS} -jar micronaut-kafka-poc.jar

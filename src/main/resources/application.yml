@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: micronaut-kafka-poc
+
+kafka:
+  bootstrap:
+    servers: kafka:9092
